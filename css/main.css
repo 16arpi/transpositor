@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 10px;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 18pt;
+    display: block;
+    margin: 10px;
+}
+
+select {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    font-size: 14pt;
+    -webkit-appearance: menulist-button;
+}
+
+canvas {
+    margin: 0 auto;
+    display: block;
+}
