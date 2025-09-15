@@ -30,6 +30,9 @@ function draw_pianos() {
     var k = 0;
     var l = 0;
 
+    ctxUp.textAlign = "center";
+    ctxDown.textAlign = "center";
+
     ctxUp.clearRect(0, 0, canvasUp.width, canvasUp.height);
     ctxDown.clearRect(0, 0, canvasDown.width, canvasDown.height);
 
@@ -62,6 +65,11 @@ function draw_pianos() {
             ctxDown.fillRect(x, y, w, h);
             ctxDown.strokeRect(x, y, w, h);
 
+            ctxUp.fillStyle = "#000";
+            ctxDown.fillStyle = "#000";
+            ctxUp.fillText(names[i], (x + x + w) / 2, (y + y + h) / 2 * 1.5);
+            ctxDown.fillText(names[i], (x + x + w) / 2, (y + y + h) / 2 * 1.5);
+
             coords[i] = [x, y, x + w, y + h]
 
             ++j;
@@ -93,6 +101,7 @@ function draw_pianos() {
 
             ctxDown.fillRect(x, y, w, h);
             ctxDown.strokeRect(x, y, w, h);
+
 
             coords[i] = [x, y, x + w, y + h]
 
